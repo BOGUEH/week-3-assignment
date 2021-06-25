@@ -25,9 +25,9 @@
             header{
                 display: flex;
                 flex-direction: column;
+                
                
             }
-     
      
          }
 
@@ -51,14 +51,20 @@
                 display: flex;
                 flex-direction: column;
             }
+            nav::before{
+                background-image: url('./images/menu\ icon.png');
             }
+        }
+
 
         a:hover{
             color: hsl(270, 9%, 17%);
+            padding: 10px 20px;
         }
         a:active{
-            background-color:hsl(270, 9%, 17%) ;
-            color:hsl(216, 30%, 68%)
+            background-color:(273, 4%, 51%);
+            color:hsl(216, 30%, 68%);
+            padding: 10px 20px;
         }
             section {
             position: relative;
@@ -115,8 +121,6 @@
         }
        
         .intro-image  {
-            /* height: 300px;
-            width: 200px; */
             margin-right: 10%;
             margin-top: 15%;
             flex:1;
@@ -133,13 +137,35 @@
              .intro-image{
                  order: 1;
                  width: 100%;
+                 height: auto;
+                 margin-right: 30%;
              }
              .text{
                  order:2;
                  background-color:hsl(256, 26%, 20%); 
                  width: 100%;
+                 align-content: center;
+                 padding: 10%;
              }
+
+
+             section::before {
+                content: url('./images/bg-pattern-intro-right-mobile.svg');
+               margin-top: 0;  
+               margin-left: 67.2%;
+               position: absolute;         
+            }
+           section::after {
+                content: url('./images/bg-pattern-intro-left-mobile.svg');
+                margin-top: 35%;  
+                position: absolute;         
+            }
+          
          }
+
+
+
+
          img:hover{
              opacity: 0.5;
          }
@@ -239,6 +265,9 @@
         display: flex;
         margin-top: 10%;
         margin-bottom: 10%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     #find-out{
         flex: 2;
@@ -248,7 +277,8 @@
         .btn2:hover{
             background-color:hsl(273, 4%, 51%); ;
             opacity: 0.5;
-            
+            color: hsl(0, 0%, 98%);
+            font-weight: 600;
         }
     #btn-find-out{
         width: 30%;
@@ -310,7 +340,7 @@
         .footer-contents{
             display: flex;
             justify-content: space-evenly;
-            color: hsl(273, 4%, 51%);
+            color: hsl(216, 30%, 68%);
         font-family:'Karla', sans-serif;
         }
         .link{
